@@ -141,6 +141,7 @@ systemctl restart apache2
 ```
 - Create a database and user in MariaDB by running these commands, replacing znuny_user with your desired username, and your_password with your desired password.
 ```
+mariadb
 CREATE DATABASE otrs;
 CREATE USER 'znuny_user'@'localhost' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON otrs.* TO 'znuny_user'@'localhost';
